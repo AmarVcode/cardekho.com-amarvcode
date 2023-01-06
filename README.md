@@ -1,2 +1,2 @@
 # cardekho.com-amarvcode
- #educational puropose
+# educational puropose only
