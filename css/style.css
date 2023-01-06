@@ -1,54 +1,54 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: roboto,Sans-Serif,Arial;
+  font-family: roboto, Sans-Serif, Arial;
 }
 
-header{
+header {
   position: sticky;
   top: 0;
   z-index: 1000;
 }
-.top{
+
+.top {
   display: flex;
   width: 100%;
   gap: 2.5em;
   padding: 1em;
-  border-bottom: 1px solid rgba(36,39,44,.1);
+  border-bottom: 1px solid rgba(36, 39, 44, 0.1);
 }
 
-.main-img{
+.main-img {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 12rem;
-
 }
 
-.main-img img{
+.main-img img {
   width: 100%;
 }
 
-.search{
+.search {
   display: flex;
   align-items: center;
   justify-content: center;
   margin-left: 3em;
 }
 
-.search input{
+.search input {
   background: #f7f7f7;
   border: 0;
-    border-left-color: currentcolor;
-    border-left-style: none;
-    border-left-width: 0px;
-  border-left: 1px solid rgba(36,39,44,.1);
+  border-left-color: currentcolor;
+  border-left-style: none;
+  border-left-width: 0px;
+  border-left: 1px solid rgba(36, 39, 44, 0.1);
   border-radius: 4px 0 0 4px;
-  box-shadow: inset 0 1px 4px 0 rgba(0,0,0,.1);
+  box-shadow: inset 0 1px 4px 0 rgba(0, 0, 0, 0.1);
   color: #24272c;
   float: right;
-  font-size: .8rem;
+  font-size: 0.8rem;
   height: 48px;
   line-height: 18px;
   padding: 0 20px;
@@ -56,55 +56,55 @@ header{
   width: 300px;
 }
 
-.search button{
+.search button {
   background-color: #24272c;
-  padding: 1em 1.5em ;
+  padding: 1em 1.5em;
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
   cursor: pointer;
   border: none;
 }
 
-.search svg{
+.search svg {
   width: 1.2rem;
   fill: white;
   background-color: #24272c;
 }
 
-.select{
+.select {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.select select{
+.select select {
   border: none;
   background-color: white;
   text-decoration: underline;
-  font-size: .7rem;
+  font-size: 0.7rem;
   cursor: pointer;
 }
 
-.heart{
+.heart {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.heart svg{
-width: 1.2rem;
-opacity: 80%;
-cursor: pointer;
+.heart svg {
+  width: 1.2rem;
+  opacity: 80%;
+  cursor: pointer;
 }
 
-.login{
+.login {
   display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
 }
 
-.login button{
+.login button {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -115,12 +115,12 @@ cursor: pointer;
   gap: 10px;
 }
 
-.login svg{
+.login svg {
   width: 1rem;
 }
 
-.fixed{
-  background-color: #24272c93;
+.fixed {
+  background-color: rgba(36, 39, 44, 0.5764705882);
   position: fixed;
   width: 100vw;
   height: 100vh;
@@ -129,61 +129,58 @@ cursor: pointer;
   display: none;
   align-items: center;
   justify-content: center;
-  &>div{
-    max-width: 700px;
-    display: grid;
-    grid-template-columns: 40% 60%;
-    background: white;
-    border-radius: 10px;
-    z-index: 2000;
-  }
-  .form{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    height: 100%;
-    padding: 1em;
-    width: 100%;
-    h2{
-      font-weight: 500;
-      color: black;
-    }
-    p{
-      color: grey;
-      font-size: .8rem;
-      padding-top: 1em;
-      padding-bottom: 1em;
-
-    }
-
-    input,button{
-      margin: 1em;
-      padding: 1em;
-      border-radius: 10px;
-      border: none;
-      background-color: rgba(128, 128, 128, 0.144);
-    }
-
-    button{
-     cursor: not-allowed;
-    }
-    span{
-      text-decoration: underline;
-    }
-  }
+}
+.fixed > div {
+  max-width: 700px;
+  display: grid;
+  grid-template-columns: 40% 60%;
+  background: white;
+  border-radius: 10px;
+  z-index: 2000;
+}
+.fixed .form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+  padding: 1em;
+  width: 100%;
+}
+.fixed .form h2 {
+  font-weight: 500;
+  color: black;
+}
+.fixed .form p {
+  color: grey;
+  font-size: 0.8rem;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+.fixed .form input, .fixed .form button {
+  margin: 1em;
+  padding: 1em;
+  border-radius: 10px;
+  border: none;
+  background-color: rgba(128, 128, 128, 0.144);
+}
+.fixed .form button {
+  cursor: not-allowed;
+}
+.fixed .form span {
+  text-decoration: underline;
 }
 
-.afterfixed{
+.afterfixed {
   display: flex !important;
 }
 
-.btncolor{
+.btncolor {
   background-color: red !important;
   color: white !important;
   cursor: pointer !important;
 }
 
-.cancel{
+.cancel {
   position: fixed;
   width: 2rem;
   top: 20px;
@@ -192,23 +189,23 @@ cursor: pointer;
   cursor: pointer;
 }
 
-.bottom{
+.bottom {
   display: flex;
   width: 100%;
   align-items: center;
   justify-content: space-around;
-  box-shadow:  0 1px 4px 1px #0000001a;
+  box-shadow: 0 1px 4px 1px rgba(0, 0, 0, 0.1019607843);
   flex-wrap: wrap;
-  &>div{
-    &>a{
-      display: block;
-      padding: .6em;
-      text-decoration: none;
-      color: black;
-      white-space: nowrap;
-      text-transform: uppercase;
-      font-size: .9rem;
-      font-weight: 500;
-    }
-  }
 }
+.bottom > div > a {
+  display: block;
+  padding: 0.6em;
+  text-decoration: none;
+  color: black;
+  white-space: nowrap;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+/*# sourceMappingURL=style.css.map */

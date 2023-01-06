@@ -7,6 +7,22 @@ function logininput(){
     let btn=document.getElementById("otp");
     
     if(input.length === 10){
-    btn.style.background="red"
+    btn.classList.add("btncolor")
     }
+    else{
+      btn.classList.remove("btncolor")
+   
     }
+}
+
+function show(){
+      let div = document.getElementById("fix")
+
+      if(div.classList.contains("afterfixed")){
+            div.classList.remove("afterfixed")
+      }
+      else{
+            div.classList.add("afterfixed")
+
+      }
+}
