@@ -8,12 +8,14 @@
 header{
   position: sticky;
   top: 0;
+  z-index: 1000;
 }
 .top{
   display: flex;
   width: 100%;
   gap: 2.5em;
   padding: 1em;
+  border-bottom: 1px solid rgba(36,39,44,.1);
 }
 
 .main-img{
@@ -59,7 +61,7 @@ header{
   padding: 1em 1.5em ;
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
-
+  cursor: pointer;
   border: none;
 }
 
@@ -114,4 +116,54 @@ cursor: pointer;
 
 .login svg{
   width: 1rem;
+}
+
+.fixed{
+  background-color: #24272c93;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  z-index: 2000;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &>div{
+    max-width: 700px;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    background: white;
+    border-radius: 10px;
+  }
+  .form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    padding: 1em;
+    width: 100%;
+    h2{
+      font-weight: 500;
+      color: black;
+    }
+    p{
+      color: grey;
+      font-size: .8rem;
+      padding-top: 1em;
+      padding-bottom: 1em;
+
+    }
+
+    input,button{
+      margin: 1em;
+      padding: 1em;
+      border-radius: 10px;
+      border: none;
+      background-color: rgba(128, 128, 128, 0.144);
+    }
+
+    button{
+      cursor: pointer;
+    }
+  }
 }
