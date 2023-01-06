@@ -197,6 +197,10 @@ header {
   box-shadow: 0 1px 4px 1px rgba(0, 0, 0, 0.1019607843);
   flex-wrap: wrap;
 }
+.bottom > div {
+  border-top: 3px solid transparent;
+  transition: 300ms;
+}
 .bottom > div > a {
   display: block;
   padding: 0.6em;
@@ -206,6 +210,39 @@ header {
   text-transform: uppercase;
   font-size: 0.9rem;
   font-weight: 500;
+}
+.bottom > div:hover {
+  border-top: 3px solid red;
+}
+
+.show {
+  width: 300px;
+  display: grid;
+  grid-template-columns: 100%;
+  position: absolute;
+  transform: scale(1, 0);
+  transform-origin: top;
+  transition: 1s;
+  background-color: white;
+  border: 1px solid rgba(128, 128, 128, 0.432);
+  box-shadow: 0px 0px 5px rgba(128, 128, 128, 0.432);
+}
+.show a {
+  padding: 0.7em;
+  display: block;
+  width: 100%;
+  text-decoration: none;
+  color: black;
+  font-size: 0.8rem;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.295);
+  transition: 500ms;
+}
+.show a:hover {
+  background: rgba(128, 128, 128, 0.247);
+}
+
+.drop:hover > .show {
+  transform: scale(1, 1);
 }
 
 /*# sourceMappingURL=style.css.map */
