@@ -229,7 +229,16 @@ border-top: 3px solid red;
     background-color: white;
     border: 1px solid rgba(128, 128, 128, 0.432);
     box-shadow: 0px 0px 5px rgba(128, 128, 128, 0.432);
-
+span{
+  background-color: orangered;
+  font-weight: 700;
+  font-size: .5rem !important;
+  padding: .5em 1em;
+  color: white;
+}
+    .show2{
+      margin-left: 100px !important;
+    }
     a{
       padding: .7em;
       display: block;
@@ -250,3 +259,4 @@ border-top: 3px solid red;
     transform: scale(1,1);
   }
 }
+
